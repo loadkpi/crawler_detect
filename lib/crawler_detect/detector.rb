@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CrawlerDetect
   class Detector
     def initialize(user_agent)
@@ -6,7 +8,7 @@ module CrawlerDetect
 
     def is_crawler?
       @is_crawler ||= begin
-        !completely_exlusion? && matches_crawler_list?
+        !completely_exclusion? && matches_crawler_list?
       end
     end
 
@@ -17,7 +19,7 @@ module CrawlerDetect
 
     private
 
-    def completely_exlusion?
+    def completely_exclusion?
       @user_agent.gsub!(exclusions_matcher, "")
       @user_agent.strip.length == 0
     end

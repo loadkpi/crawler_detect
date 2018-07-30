@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module CrawlerDetect
   module Library
     def self.get(param)

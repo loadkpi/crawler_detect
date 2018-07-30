@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "crawler_detect/detector"
 require "crawler_detect/library"
 require "crawler_detect/library/crawlers"
@@ -8,11 +10,17 @@ require "crawler_detect/version"
 module CrawlerDetect
   class << self
     def new(user_agent)
-      CrawlerDetect::Detector.new(user_agent)
+      detector(user_agent)
     end
 
     def is_crawler?(user_agent)
-      new(user_agent).is_crawler?
+      detector(user_agent).is_crawler?
+    end
+
+    private
+
+    def detector(user_agent)
+      CrawlerDetect::Detector.new(user_agent)
     end
   end
 end
