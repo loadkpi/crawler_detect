@@ -30,11 +30,11 @@ module CrawlerDetect
     end
 
     def exclusions_matcher
-      CrawlerDetect::Library.get("exclusions")
+      CrawlerDetect::Library.get_regexp("exclusions")
     end
 
     def crawlers_matcher
-      CrawlerDetect::Library.get("crawlers")
+      CrawlerDetect::Library.get_regexp("crawlers")
     end
   end
 end

@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
+require "pry-meta"
+
 require "crawler_detect"
 
 RSPEC_ROOT = File.dirname __FILE__

@@ -7,6 +7,8 @@ require "crawler_detect/library/exclusions"
 require "crawler_detect/library/headers"
 require "crawler_detect/version"
 
+require "rack/crawler_detect"
+
 module CrawlerDetect
   class << self
     def new(user_agent)
