@@ -5,6 +5,9 @@ require "rack/crawler_detect_request_helper"
 module Rack
   class CrawlerDetect
     def initialize(app, options = {})
+      Rack::Request.class_eval do
+        include CrawlerDetectRequestHelper
+      end
       @app = app
     end
 
@@ -36,9 +39,5 @@ module Rack
     def user_agent_headers
       ::CrawlerDetect::Library.get_array("headers")
     end
-  end
-
-  class Request
-    include CrawlerDetectRequestHelper
   end
 end

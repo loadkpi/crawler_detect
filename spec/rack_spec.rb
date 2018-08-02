@@ -6,8 +6,10 @@ RSpec.describe Rack::CrawlerDetect do
   include Rack::Test::Methods
 
   def app
-    app = lambda { |env| [200, { "Content-Type" => "text/plain" }, ["Hello"]] }
-    Rack::CrawlerDetect.new(app)
+    Rack::Builder.app do
+      use Rack::CrawlerDetect
+      run lambda { |_env| [200, { "Content-Type" => "text/plain" }, ["OK"]] }
+    end
   end
 
   it "extends functionality of Rack::Request" do
