@@ -8,17 +8,21 @@ RSpec.describe CrawlerDetect::Detector do
 
   context "white list" do
     GOOD_UA.each do |ua|
-      let(:user_agent) { ua }
+      describe "#{ua}" do
+        let(:user_agent) { ua }
 
-      it { is_expected.to be(false) }
+        it { is_expected.to be(false) }
+      end
     end
   end
 
   context "black list" do
     BAD_UA.each do |ua|
-      let(:user_agent) { ua }
+      describe "#{ua}" do
+        let(:user_agent) { ua }
 
-      it { is_expected.to be(true) }
+        it { is_expected.to be(true) }
+      end
     end
   end
 end
