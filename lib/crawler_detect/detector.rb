@@ -3,7 +3,7 @@
 module CrawlerDetect
   class Detector
     def initialize(user_agent)
-      @user_agent = user_agent
+      @user_agent = user_agent.dup
     end
 
     def is_crawler?
