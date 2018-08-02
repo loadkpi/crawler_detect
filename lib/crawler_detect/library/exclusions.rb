@@ -45,6 +45,11 @@ module CrawlerDetect
         Opera
          \.NET[\d\.]*
         cubot
+        ; M bot
+        ; B bot
+        ; IDbot
+        ; ID bot
+        ; POWER BOT
         ;
       ].freeze
     end

@@ -1161,6 +1161,7 @@ module CrawlerDetect
         ZnajdzFoto
         Zombie\.js
         ZyBorg
+        SpamExperts
         [a-z0-9\-_]*(bot|crawler|archiver|transcoder|spider|uptime|validator|fetcher)
       ].freeze
     end
