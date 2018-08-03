@@ -1,12 +1,17 @@
 # frozen_string_literal: true
 
-require "rack/crawler_detect_request_helper"
-
 module Rack
   class CrawlerDetect
     def initialize(app, options = {})
-      Rack::Request.class_eval do
-        include CrawlerDetectRequestHelper
+      puts 99999999
+      Rack::Request::Helpers.module_eval do
+        def is_crawler?
+          env["rack.crawler_detect"][:is_crawler]
+        end
+
+        def crawler_name
+          env["rack.crawler_detect"][:crawler_name]
+        end
       end
       @app = app
     end
