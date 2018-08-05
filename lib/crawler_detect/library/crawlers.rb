@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# rubocop:disable Layout/TrailingWhitespace
 module CrawlerDetect
   module Library
     module Crawlers
