@@ -3,9 +3,15 @@
 require "bundler/setup"
 require "pry-meta"
 
+RSPEC_ROOT = File.dirname __FILE__
+
+BAD_UA  = File.readlines("#{RSPEC_ROOT}/fixtures/crawlers.txt").freeze
+GOOD_UA = File.readlines("#{RSPEC_ROOT}/fixtures/devices.txt").freeze
+GOOD_UA_CHUNKS = GOOD_UA.each_slice((GOOD_UA.size / 2.0).round).to_a.to_a.freeze
+
 require "crawler_detect"
 
-RSPEC_ROOT = File.dirname __FILE__
+Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,18 +1,12 @@
 # frozen_string_literal: true
 
-GOOD_UA = File.readlines("#{RSPEC_ROOT}/fixtures/devices.txt").freeze
-BAD_UA  = File.readlines("#{RSPEC_ROOT}/fixtures/crawlers.txt").freeze
-
 RSpec.describe CrawlerDetect::Detector do
   subject { described_class.new(user_agent).is_crawler? }
 
-  context "white list" do
-    GOOD_UA.each do |ua|
-      describe "#{ua}" do
-        let(:user_agent) { ua }
-
-        it { is_expected.to be(false) }
-      end
+  context "white list specs files" do
+    it "test all devices" do
+      specs_count = Dir.glob("#{RSPEC_ROOT}/crawler_detect/detector_devices/*.rb").count
+      expect(GOOD_UA_CHUNKS.count).to eq(specs_count)
     end
   end
 
