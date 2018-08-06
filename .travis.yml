@@ -2,6 +2,13 @@
 sudo: false
 language: ruby
 cache: bundler
+env:
+  - "TEST_GROUP=1"
+  - "TEST_GROUP=2"
+  - "TEST_GROUP=3"
+  - "TEST_GROUP=4"
+  - "TEST_GROUP=5"
+  - "TEST_GROUP=6"
 rvm:
   - 2.2
   - 2.3
@@ -9,4 +16,4 @@ rvm:
   - 2.5
 before_install: gem install bundler -v 1.16.2
 script:
-  - bundle exec parallel_rspec spec/
+  - bundle exec parallel_rspec spec/ -n 6 --only-group $TEST_GROUP --runtime-log spec/fixtures/parallel_runtime_rspec.log
