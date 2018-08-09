@@ -997,7 +997,7 @@ uclassify
 uCrawlr\/
 UdmSearch
 UniversalFeedParser
-Unshorten\.It\!\/[0-9]
+Unshorten\.It
 Untiny
 UnwindFetchor
 updated
