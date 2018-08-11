@@ -9,7 +9,7 @@ RSPEC_ROOT = File.dirname __FILE__
 
 BAD_UA  = File.readlines("#{RSPEC_ROOT}/fixtures/crawlers.txt").freeze
 GOOD_UA = File.readlines("#{RSPEC_ROOT}/fixtures/devices.txt").freeze
-GOOD_UA_CHUNKS = GOOD_UA.in_groups(5, false).freeze
+GOOD_UA_CHUNKS = GOOD_UA.in_groups(4, false).freeze
 
 require "crawler_detect"
 
