@@ -2,7 +2,6 @@ spec/crawler_detect_spec.rb:0.023381545
 spec/rack_spec.rb:0.029698902
 spec/crawler_detect/detector_spec.rb:70.975507319
 spec/crawler_detect/detector_devices/white_list_1_spec.rb:1000.975507319
-spec/crawler_detect/detector_devices/white_list_2_spec.rb:1000.975507319
-spec/crawler_detect/detector_devices/white_list_3_spec.rb:1000.975507319
-spec/crawler_detect/detector_devices/white_list_4_spec.rb:1000.975507319
-spec/crawler_detect/detector_devices/white_list_5_spec.rb:1000.975507319
+spec/crawler_detect/detector_devices/white_list_2_spec.rb:1001.975507319
+spec/crawler_detect/detector_devices/white_list_3_spec.rb:1002.975507319
+spec/crawler_detect/detector_devices/white_list_4_spec.rb:1003.975507319
