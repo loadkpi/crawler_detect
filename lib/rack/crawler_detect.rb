@@ -33,11 +33,9 @@ module Rack
       end
 
       def user_agent
-        @user_agent ||= begin
-          user_agent_headers.map do |header|
-            @env[header]
-          end.compact.join(" ")
-        end
+        user_agent_headers.map do |header|
+          @env[header]
+        end.compact.join(" ")
       end
 
       def user_agent_headers
