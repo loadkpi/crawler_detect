@@ -19,7 +19,7 @@ RSpec.describe CrawlerDetect do
     context "empty header" do
       let(:user_agent) { nil }
 
-      it { is_expected.to be(true).or be(false) }
+      it { is_expected.to be(false) }
     end
   end
 end
