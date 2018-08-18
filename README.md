@@ -1,6 +1,6 @@
 # CrawlerDetect  
   
-[![Build Status](https://travis-ci.org/loadkpi/crawler_detect.svg?branch=master)](https://travis-ci.org/loadkpi/crawler_detect)
+[![Build Status](https://travis-ci.org/loadkpi/crawler_detect.svg?branch=master)](https://travis-ci.org/loadkpi/crawler_detect) [![Gem Version](https://badge.fury.io/rb/crawler_detect.svg)](https://badge.fury.io/rb/crawler_detect)
 
 ## About
 **CrawlerDetect** is a Ruby version of PHP class @[CrawlerDetect](https://github.com/JayBizzle/Crawler-Detect). 
