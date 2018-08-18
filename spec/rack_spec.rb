@@ -21,4 +21,14 @@ RSpec.describe Rack::CrawlerDetect do
     expect(last_request.is_crawler?).to eq(true)
     expect(last_request.crawler_name).to eq("Test Bot")
   end
+
+  it "works with custom header" do
+    stub_const("CrawlerDetect::Library::Crawlers::CRAWLERS", ["Test Bot"])
+
+    header "From", "Test Bot 007"
+    get "/"
+
+    expect(last_request.is_crawler?).to eq(true)
+    expect(last_request.crawler_name).to eq("Test Bot")
+  end
 end
