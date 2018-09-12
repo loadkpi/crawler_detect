@@ -615,6 +615,7 @@ mogimogi
 Mojeek
 Mojolicious \(Perl\)
 monitis
+Monit\/
 Monitority\/[0-9]
 montastic
 MonTools
@@ -653,7 +654,7 @@ Netvibes
 NetZIP
 Neustar WPM
 NeutrinoAPI
-NewRelicPinger\/1.0 \(\d+\)
+NewRelicPinger
 NewsBlur .*Finder
 NewsGator
 newsme
