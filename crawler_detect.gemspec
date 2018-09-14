@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 
+  spec.add_development_dependency "activesupport", "~> 5.2.0"
   spec.add_development_dependency "fuubar", "~> 2.0"
   spec.add_development_dependency "parallel_tests", "~> 2.0"
   spec.add_development_dependency "pry-meta", "~> 0.0.10"
