@@ -3,11 +3,13 @@
 require "bundler/setup"
 require "pry-meta"
 
+require "active_support/core_ext/array/grouping"
+
 RSPEC_ROOT = File.dirname __FILE__
 
 BAD_UA  = File.readlines("#{RSPEC_ROOT}/fixtures/crawlers.txt").freeze
 GOOD_UA = File.readlines("#{RSPEC_ROOT}/fixtures/devices.txt").freeze
-GOOD_UA_CHUNKS = GOOD_UA.each_slice((GOOD_UA.size / 2.0).round).to_a.to_a.freeze
+GOOD_UA_CHUNKS = GOOD_UA.in_groups(4, false).freeze
 
 require "crawler_detect"
 

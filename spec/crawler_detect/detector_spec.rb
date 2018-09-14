@@ -7,6 +7,7 @@ RSpec.describe CrawlerDetect::Detector do
     it "test all devices" do
       specs_count = Dir.glob("#{RSPEC_ROOT}/crawler_detect/detector_devices/*.rb").count
       expect(GOOD_UA_CHUNKS.count).to eq(specs_count)
+      expect(GOOD_UA_CHUNKS.flatten.count).to eq(GOOD_UA.count)
     end
   end
 
