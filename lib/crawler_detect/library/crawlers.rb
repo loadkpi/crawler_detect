@@ -741,6 +741,7 @@ PictureFinder
 Pimonster
 ping\.blo\.gs\/
 Pingability
+PingAdmin\.Ru
 Pingdom
 Pingoscope
 PingSpot
