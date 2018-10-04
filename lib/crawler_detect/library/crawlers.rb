@@ -35,7 +35,6 @@ module CrawlerDetect
 ^PHP\/[0-9]
 ^RMA\/
 ^Ruby|Ruby\/[0-9]
-^scrutiny\/
 ^VSE\/[0-9]
 ^WordPress\.com
 ^XRL\/[0-9]
@@ -76,10 +75,12 @@ Anarchie
 AndroidDownloadManager
 Anemone
 AngleSharp\/
+annotate_google
 Ant\.com
 Anturis Agent
 AnyEvent-HTTP\/
 Apache Droid
+Apache OpenOffice
 Apache-HttpAsyncClient\/
 Apache-HttpClient\/
 ApacheBench\/
@@ -122,6 +123,7 @@ BBBike
 BCKLINKS
 BDFetch
 BegunAdvertising\/
+Bidtellect\/
 BigBozz
 Bigfoot
 biglotron
@@ -134,6 +136,8 @@ biz_Directory
 Black\ Hole
 Blackboard Safeassign
 BlackWidow
+BlockNote\.Net
+Bloglines\/
 Bloglovin
 BlogPulseLive
 BlogSearch
@@ -219,10 +223,12 @@ cybo\.com
 DareBoost
 DatabaseDriverMysqli
 DataCha0s
+Datanyze
 DataparkSearch
 dataprovider
 DataXu
 Daum(oa)?[ \/][0-9]
+DemandbasePublisherAnalyzer\/
 Demon
 DeuSu
 developers\.google\.com\/\+\/web\/snippet\/
@@ -273,6 +279,7 @@ EMail\ Wolf
 EmailWolf
 Embed PHP Library
 Embedly
+endo\/
 europarchive\.org
 evc-batch
 EventMachine HttpClient
@@ -299,6 +306,7 @@ Faveeo
 Favicon downloader
 FavOrg
 Feed Wrangler
+Feedable\/
 Feedbin
 FeedBooster
 FeedBucket
@@ -306,8 +314,11 @@ FeedBunch\/[0-9]
 FeedBurner
 FeedChecker
 Feedly
+Feedreader
+FeedshowOnline
 Feedspot
 Feedwind\/[0-9]
+FeedZcollector
 feeltiptop
 Fetch API
 Fetch\/[0-9]
@@ -424,6 +435,7 @@ HostTracker
 ht:\/\/check
 htdig
 HTMLparser
+htmlyse\.com
 http-get
 HTTP-Header-Abfrage
 http-kit
@@ -457,6 +469,7 @@ IDwhois\/[0-9]
 Iframely
 igdeSpyder
 IlTrovatore
+ImageVisu\/
 Image\ Fetch
 Image\ Sucker
 ImageEngine\/
@@ -466,6 +479,7 @@ InAGist
 inbound\.li parser
 InDesign%20CC
 Indy\ Library
+InetURL
 infegy
 infohelfer
 InfoTekies
@@ -563,6 +577,7 @@ Lipperhey
 Litemage_walker
 livedoor ScreenShot
 LoadImpactRload
+localsearch-web
 LongURL API
 looksystems\.net
 ltx71
@@ -609,6 +624,7 @@ Miniflux
 Mister\ PiX
 mixdata dot com
 mixed-content-scan
+Mixmax-LinkPreview
 mixnode
 Mnogosearch
 mogimogi
@@ -645,6 +661,7 @@ NetAnts
 NETCRAFT
 NetLyzer
 NetMechanic
+NetNewsWire
 Netpursual
 netresearch
 NetShelter ContentScan
@@ -683,6 +700,7 @@ NYU
 Ocelli\/[0-9]
 Octopus
 oegp
+og-scraper\/
 Offline Explorer
 Offline\ Navigator
 okhttp
@@ -748,6 +766,7 @@ PingSpot
 pinterest\.com
 Pixray
 Pizilla
+Plagger\/
 PleaseCrawl
 Ploetz \+ Zeller
 Plukkie
@@ -795,6 +814,7 @@ Radian6
 RankActive
 RankFlex
 RankSonicSiteAuditor
+raynette_httprequest
 Readability
 RealDownload
 RealPlayer%20Downloader
@@ -816,6 +836,7 @@ Robozilla\/[0-9]
 ROI Hunter
 RPT-HTTPClient
 RSSOwl
+RssReader\/
 safe-agent-scanner
 SalesIntelligent
 Saleslift
@@ -824,6 +845,7 @@ SBIder
 scalaj-http
 scan\.lol
 ScanAlert
+ScrapeBox Page Scanner
 Scoop
 scooter
 ScoutJet
@@ -832,9 +854,11 @@ Scrapy
 Screaming
 ScreenShotService\/[0-9]
 Scrubby
+Scrutiny\/
 Search37\/
 search\.thunderstone
 Searchestate
+SearchExpress
 SearchSight
 Seeker
 semanticdiscovery
@@ -899,6 +923,7 @@ SlySearch
 SmartDownload
 SMRF URL Expander
 SMUrlExpander
+Snarfer\/
 Snake
 Snappy
 SniffRSS
@@ -998,6 +1023,7 @@ ubermetrics-technologies
 uclassify
 uCrawlr\/
 UdmSearch
+unirest-java
 UniversalFeedParser
 Unshorten\.It
 Untiny
@@ -1111,11 +1137,13 @@ WhoRunsCoinHive
 Whynder Magnet
 Windows-RSS-Platform
 WinHttpRequest
+WinPodder
 wkhtmlto
 wmtips
 Woko
 Word\/
 WordPress\/
+WordupinfoSearch
 wotbox
 WP Engine Install Performance API
 wpif
