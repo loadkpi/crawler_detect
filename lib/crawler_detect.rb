@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "oj"
+
 require "crawler_detect/detector"
 require "crawler_detect/library"
 require "crawler_detect/library/crawlers"

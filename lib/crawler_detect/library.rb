@@ -9,8 +9,7 @@ module CrawlerDetect
       end
 
       def get_array(param)
-        const_name = "CrawlerDetect::Library::#{param.capitalize}::#{param.upcase}"
-        const_get(const_name)
+        const_get("CrawlerDetect::Library::#{param.capitalize}").class_variable_get("@@#{param.downcase}")
       end
     end
   end
