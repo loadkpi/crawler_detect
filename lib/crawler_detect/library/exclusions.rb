@@ -6,7 +6,7 @@ module CrawlerDetect
       EXCLUSIONS = %q[
 Safari.[\d\.]*
 Firefox.[\d\.]*
-Chrome.[\d\.]*
+ Chrome.[\d\.]*
 Chromium.[\d\.]*
 MSIE.[\d\.]
 Opera\/[\d\.]*
