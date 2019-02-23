@@ -8,12 +8,12 @@ module CrawlerDetect
 .*Java.*outbrain
  YLT
 ^b0t$
-^bluefish 
+^bluefish
 ^Calypso v\/
 ^COMODO DCV
 ^DangDang
 ^DavClnt
-^FDM 
+^FDM
 ^git\/
 ^Goose\/
 ^Grabber
@@ -120,7 +120,7 @@ baidu\.com
 Bandit
 basicstate
 BatchFTP
-Battleztar Bazinga
+Battlezta Bazinga
 baypup\/
 BazQux
 BBBike
@@ -466,7 +466,7 @@ httpunit
 HttpUrlConnection
 httrack
 huaweisymantec
-HubSpot 
+HubSpot
 Humanlinks
 i2kconnect\/
 Iblog
@@ -620,7 +620,7 @@ Metaspinner
 MetaURI
 MFC_Tear_Sample
 Microsearch
-Microsoft Office 
+Microsoft Office
 Microsoft Outlook
 Microsoft Windows Network Diagnostics
 Microsoft-WebDAV-MiniRedir
@@ -803,7 +803,7 @@ ProWebWalker
 proximic
 PRTG Network Monitor
 pshtt, https scanning
-PTST 
+PTST
 PTST\/[0-9]+
 Pulsepoint XT3 web scraper
 Pump
@@ -955,7 +955,7 @@ speedy
 SPEng
 Spinn3r
 spray-can
-Sprinklr 
+Sprinklr
 spyonweb
 sqlmap
 Sqlworm
@@ -1115,7 +1115,7 @@ WebIndex
 webkit2png
 WebLeacher
 webmastercoffee
-webmon 
+webmon\s
 WebPix
 WebReaper
 WebSauger
@@ -1199,7 +1199,7 @@ Zao
 Zauba
 Zemanta Aggregator
 Zend_Http_Client
-Zend\\Http\\Client
+Zend\\\Http\\\Client
 Zermelo
 Zeus
 zgrab
@@ -1207,7 +1207,7 @@ ZnajdzFoto
 Zombie\.js
 Zoom\.Mac
 ZyBorg
-[a-z0-9\-_]*(bot|crawl|archiver|transcoder|spider|uptime|validator|fetcher|cron)
+[a-z0-9\-_]*(bot|crawl|archiver|transcoder|spider|uptime|validator|fetcher|cron|checker|reader|extractor|monitoring|analyzer)
       ].strip.split(/\n+/).freeze
     end
   end

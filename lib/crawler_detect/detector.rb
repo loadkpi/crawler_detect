@@ -25,7 +25,7 @@ module CrawlerDetect
       end
 
       def matches_crawler_list?
-        @crawler_name = crawlers_matcher.match(@user_agent).to_s
+        @crawler_name = crawlers_matcher.match(@user_agent).to_s.strip
         !@crawler_name.empty?
       end
 
