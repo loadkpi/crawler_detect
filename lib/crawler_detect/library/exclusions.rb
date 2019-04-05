@@ -46,6 +46,7 @@ Opera
  \.NET[\d\.]*
 cubot
 ; M bot
+; CRONO
 ; B bot
 ; IDbot
 ; ID bot
