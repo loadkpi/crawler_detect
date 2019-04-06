@@ -57,6 +57,7 @@ ADmantX
 AdminLabs
 adressendeutschland
 adscanner
+Adstxtaggregator
 agentslug
 AHC
 aihit
@@ -242,6 +243,7 @@ Digg
 Digincore
 DigitalPebble
 Dirbuster
+Discourse Forum Onebox
 Disqus\/
 Dispatch\/
 DittoSpyder
@@ -306,6 +308,7 @@ fasthttp
 Faveeo
 Favicon downloader
 faviconkit
+faviconarchive
 FavOrg
 Feed Wrangler
 Feedable\/
@@ -407,6 +410,7 @@ GrabNet
 Grafula
 Grammarly
 GrapeFX
+GreatNews
 Gregarius
 GRequests
 grokkit
@@ -568,6 +572,7 @@ libwww
 Licorne
 Liferea\/
 Lightspeedsystems
+Lighthouse
 Likse
 Link Valet
 link_thumbnailer
@@ -616,6 +621,7 @@ mediawords
 MegaIndex\.ru
 MeltwaterNews
 Melvil Rawi
+MemGator
 Metaspinner
 MetaURI
 MFC_Tear_Sample
@@ -699,6 +705,7 @@ node\.io
 Nodemeter
 NodePing
 nominet\.org\.uk
+nominet\.uk
 Norton-Safeweb
 Notifixious
 notifyninja
@@ -824,6 +831,7 @@ RankActive
 RankFlex
 RankSonicSiteAuditor
 Re-re Studio
+ReactorNetty
 Readability
 RealDownload
 RealPlayer%20Downloader
@@ -835,6 +843,7 @@ ReederForMac
 ReGet
 RepoMonkey
 request\.js
+reqwest\/
 ResponseCodeTest
 RestSharp
 Riddler
@@ -1016,6 +1025,7 @@ topster
 touche\.com
 Traackr\.com
 tracemyfile
+Trackuity
 TrapitAgent
 Trendiction
 Trendsmap
@@ -1037,6 +1047,7 @@ Typhoeus
 ubermetrics-technologies
 uclassify
 UdmSearch
+unchaos
 unirest-java
 UniversalFeedParser
 Unshorten\.It
@@ -1046,10 +1057,12 @@ updated
 updown\.io daemon
 Upflow
 Uptimia
+Urlcheckr
 URL Verifier
 URLitor
 urlresolver
 Urlstat
+URLTester
 UrlTrends Ranking Updater
 URLy Warning
 URLy\.Warning
@@ -1152,6 +1165,7 @@ WinPodder
 wkhtmlto
 wmtips
 Woko
+woorankreview
 Word\/
 WordPress\/
 WordupinfoSearch
@@ -1201,7 +1215,7 @@ Zemanta Aggregator
 Zend_Http_Client
 Zend\\\Http\\\Client
 Zermelo
-Zeus
+Zeus 
 zgrab
 ZnajdzFoto
 Zombie\.js
