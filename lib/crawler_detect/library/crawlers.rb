@@ -91,6 +91,7 @@ APIs-Google
 AportWorm\/
 AppBeat\/
 AppEngine-Google
+AppleSyndication
 AppStoreScraperZ
 Aprc\/[0-9]
 Arachmo
@@ -107,6 +108,7 @@ Astute
 asynchttp
 Attach
 autocite
+AutomaticWPTester
 Autonomy
 axios\/
 B-l-i-t-z-B-O-T
@@ -220,6 +222,7 @@ Crescent
 Crowsnest
 Criteo
 CSHttp
+CSSCheck
 curb
 Curious George
 curl
@@ -235,6 +238,9 @@ DataparkSearch
 dataprovider
 DataXu
 Daum(oa)?[ \/][0-9]
+dBpoweramp
+ddline
+deeris
 Demon
 DeuSu
 developers\.google\.com\/\+\/web\/snippet\/
@@ -616,6 +622,7 @@ MarkWatch
 Mass Downloader
 masscan\/
 Mata Hari
+Mediametric
 Mediapartners-Google
 mediawords
 MegaIndex\.ru
@@ -840,6 +847,7 @@ Recorder
 RecurPost\/
 redback\/
 ReederForMac
+Reeder\/
 ReGet
 RepoMonkey
 request\.js
@@ -1007,6 +1015,7 @@ terrainformatica
 Test Certificate Info
 testuri
 Tetrahedron
+TextRazor Downloader
 The Drop Reaper
 The Expert HTML Source Viewer
 The Knowledge AI
@@ -1016,6 +1025,7 @@ TheNomad
 Thinklab
 Thumbshots
 ThumbSniper
+Thumbor
 timewe\.net
 TinEye
 Tiny Tiny RSS
@@ -1105,6 +1115,7 @@ Web Fetch
 Web Fuck
 Web Pix
 Web Sauger
+Web spyder
 Web Sucker
 Webalta
 Webauskunft
