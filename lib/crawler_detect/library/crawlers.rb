@@ -110,6 +110,7 @@ Attach
 autocite
 AutomaticWPTester
 Autonomy
+AWS Security Scanner
 axios\/
 B-l-i-t-z-B-O-T
 Backlink-Ceck
@@ -434,6 +435,7 @@ Hadi Agent
 HappyApps-WebCheck
 Hatena
 Havij
+HaxerMen
 HeadlessChrome
 HEADMasterSEO
 HeartRails_Capture
@@ -561,6 +563,7 @@ Kml-Google
 knows\.is
 KOCMOHABT
 kouio
+kubectl
 kube-probe
 kulturarw3
 KumKie
@@ -688,6 +691,7 @@ Netpursual
 netresearch
 NetShelter ContentScan
 Netsparker
+NetSystemsResearch
 NetTrack
 Netvibes
 NetZIP
