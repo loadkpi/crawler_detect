@@ -58,6 +58,8 @@ AdminLabs
 adressendeutschland
 adscanner
 Adstxtaggregator
+adstxt-worker
+adstxt\.com
 agentslug
 AHC
 aihit
@@ -73,6 +75,7 @@ allloadin
 AllSubmitter
 alyze\.info
 amagit
+^Amazon Simple Notification Service Agent$
 Anarchie
 AndroidDownloadManager
 Anemone
@@ -216,8 +219,10 @@ CookieReports
 copyright sheriff
 CopyRightCheck
 Copyscape
+cortex\/
 Cosmos4j\.feedback
 Covario-IDS
+Craw\/
 Crescent
 Crowsnest
 Criteo
@@ -271,6 +276,7 @@ drupact
 Drupal \(\+http:\/\/drupal\.org\/\)
 DTS Agent
 dubaiindex
+DuplexWeb-Google
 EARTHCOM
 Easy-Thumb
 EasyDL
@@ -307,6 +313,7 @@ Extreme Picture Finder
 EyeNetIE
 ezooms
 facebookexternalhit
+facebookexternalua
 facebookplatform
 fairshare
 Faraday v
@@ -365,6 +372,7 @@ GetRight
 getroot
 GetURLInfo\/
 GetWeb
+Geziyor
 Ghost Inspector
 GigablastOpenSource
 GIS-LABS
@@ -395,6 +403,7 @@ Google-Calendar-Importer
 Google-HotelAdsVerifier
 Google-HTTP-Java-Client
 Google-Publisher-Plugin
+Google-Read-Aloud
 Google-SearchByImage
 Google-Site-Verification
 Google-Structured-Data-Testing-Tool
@@ -469,6 +478,7 @@ http_get
 HttpComponents
 httphr
 HTTPMon
+HTTPie
 httpRequest
 httpscheck
 httpssites_power
@@ -515,6 +525,7 @@ internet_archive
 Internet Ninja
 InternetSeer
 internetVista monitor
+internetwache
 intraVnews
 IODC
 IOI
@@ -529,6 +540,7 @@ isitup\.org
 iskanie
 isUp\.li
 iThemes Sync\/
+IZaBEE
 iZSearch
 JAHHO
 janforman
@@ -555,6 +567,7 @@ Kerrigan\/
 KeyCDN
 Keyword Density
 Keywords Research
+khttp\/
 KickFire
 KimonoLabs\/
 Kml-Google
@@ -599,6 +612,7 @@ livedoor ScreenShot
 LoadImpactRload
 localsearch-web
 LongURL API
+looid\.com
 looksystems\.net
 ltx71
 lua-resty-http
@@ -716,6 +730,7 @@ nominet\.uk
 Norton-Safeweb
 Notifixious
 notifyninja
+NotionEmbedder
 nuhk
 nutch
 Nuzzel
@@ -728,6 +743,7 @@ Octopus
 oegp
 Offline Explorer
 Offline Navigator
+OgScrper
 og-scraper
 okhttp
 omgili
@@ -1179,6 +1195,7 @@ Woko
 woorankreview
 Word\/
 WordPress\/
+worldping-api
 WordupinfoSearch
 wotbox
 WP Engine Install Performance API
@@ -1229,6 +1246,7 @@ Zermelo
 Zeus 
 zgrab
 ZnajdzFoto
+ZnHTTP
 Zombie\.js
 Zoom\.Mac
 ZyBorg
