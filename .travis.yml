@@ -8,8 +8,9 @@ env:
   - "TEST_GROUP=3"
   - "TEST_GROUP=4"
 rvm:
-  - 2.2
+  - 2.3
   - 2.5
-before_install: gem install bundler -v 1.16.2
+  - 2.6
+before_install: gem install bundler
 script:
   - bundle exec parallel_rspec spec/ -n 4 --only-group $TEST_GROUP --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log

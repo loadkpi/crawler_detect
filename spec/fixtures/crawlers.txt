@@ -3450,3 +3450,22 @@ CSSCheck/1.2.2
 dBpoweramp
 Thumbor/6.4.1
 Reeder/1000.02.01 CFNetwork/454.11.5 Darwin/10.5.0 (i386) (Macmini2)
+worldping-api
+Geziyor 1.0
+adstxt-worker (www.column6.com)
+adstxt.com/1.2
+Mozilla/5.0 (compatible; ZnHTTP/7.80)
+khttp/1.0.0-SNAPSHOT
+IZaBEE/IZaBEE-1.01 (Buzzing Abound The Web; https://izabee.com; info at izabee dot com)
+HTTPie/1.0.2
+Craw/1.0
+internetwache.org v3.4
+looid.com Search Engine/0.1
+OgScrper/1.0.0
+NotionEmbedder
+facebookexternalua
+Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012; DuplexWeb-Google/1.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Mobile Safari/537.36
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36 (compatible; Google-Read-Aloud; +https://support.google.com/webmasters/answer/1061943)
+FeedFetcher-Google; (+http://www.google.com/feedfetcher.html)
+Amazon Simple Notification Service Agent
+cortex/1.0
