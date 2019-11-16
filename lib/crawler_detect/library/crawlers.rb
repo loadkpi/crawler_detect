@@ -114,6 +114,7 @@ autocite
 AutomaticWPTester
 Autonomy
 axios\/
+AWS Security Scanner
 B-l-i-t-z-B-O-T
 Backlink-Ceck
 backlink-check
@@ -443,6 +444,7 @@ Hadi Agent
 HappyApps-WebCheck
 Hatena
 Havij
+HaxerMen
 HeadlessChrome
 HEADMasterSEO
 HeartRails_Capture
@@ -574,6 +576,7 @@ Kml-Google
 knows\.is
 KOCMOHABT
 kouio
+kubectl
 kube-probe
 kulturarw3
 KumKie
@@ -712,6 +715,7 @@ NewsBlur .*Finder
 NewsGator
 newsme
 newspaper\/
+NetSystemsResearch
 Nexgate Ruby Client
 NG-Search
 Nibbler
