@@ -34,7 +34,7 @@ RSpec.describe Rack::CrawlerDetect do
 
   it "should be thread safe" do
      instance = described_class.new(app)
-     instance.call({ "test": true })
+     instance.call({})
      expect(instance.instance_variable_get(:@env)).to be_nil
   end
 
