@@ -31,4 +31,11 @@ RSpec.describe Rack::CrawlerDetect do
     expect(last_request.is_crawler?).to eq(true)
     expect(last_request.crawler_name).to eq("Test Bot")
   end
+
+  it "should be thread safe" do
+     instance = described_class.new(app)
+     instance.call({ "test": true })
+     expect(instance.instance_variable_get(:@env)).to be_nil
+  end
+
 end
