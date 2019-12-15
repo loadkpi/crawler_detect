@@ -24,7 +24,7 @@ module Rack
 
       def set_env_variables!(env)
         ua = user_agent(env)
-        return env unless ua
+        return unless ua
         detector = ::CrawlerDetect::Detector.new(ua)
         env["rack.crawler_detect"] = {
           is_crawler:   detector.is_crawler?,
