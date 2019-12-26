@@ -16,25 +16,25 @@ module Rack
     end
 
     def call(env)
-      @env = env
-      set_env_variables!
-      @app.call(@env)
+      set_env_variables!(env)
+      @app.call(env)
     end
 
     private
 
-      def set_env_variables!
-        return @env unless user_agent
-        detector = ::CrawlerDetect::Detector.new(user_agent)
-        @env["rack.crawler_detect"] = {
+      def set_env_variables!(env)
+        ua = user_agent(env)
+        return unless ua
+        detector = ::CrawlerDetect::Detector.new(ua)
+        env["rack.crawler_detect"] = {
           is_crawler:   detector.is_crawler?,
           crawler_name: detector.crawler_name,
         }
       end
 
-      def user_agent
+      def user_agent(env)
         user_agent_headers.map do |header|
-          @env[header]
+          env[header]
         end.compact.join(" ")
       end
 

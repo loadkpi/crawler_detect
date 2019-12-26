@@ -31,4 +31,5 @@ RSpec.describe Rack::CrawlerDetect do
     expect(last_request.is_crawler?).to eq(true)
     expect(last_request.crawler_name).to eq("Test Bot")
   end
+
 end
