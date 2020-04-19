@@ -2,6 +2,8 @@ os: linux
 dist: xenial
 language: ruby
 cache: bundler
+before_install:
+  - gem install bundler
 env:
   - "TEST_GROUP=1"
   - "TEST_GROUP=2"
@@ -11,6 +13,5 @@ rvm:
   - 2.5
   - 2.6
   - 2.7
-before_install: gem install bundler
 script:
   - bundle exec parallel_rspec spec/ -n 4 --only-group $TEST_GROUP --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log

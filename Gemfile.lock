@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    crawler_detect (0.1.11)
+    crawler_detect (0.1.12)
 
 GEM
   remote: https://rubygems.org/
