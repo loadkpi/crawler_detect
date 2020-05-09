@@ -22,5 +22,3 @@ jobs:
     - stage: lint
       rvm: 2.7
       script: bundle exec rubocop
-    - stage: test
-      script: bundle exec parallel_rspec spec/ -n 4 --only-group $TEST_GROUP --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log
