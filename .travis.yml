@@ -9,9 +9,12 @@ env:
   - "TEST_GROUP=2"
   - "TEST_GROUP=3"
   - "TEST_GROUP=4"
-rvm:
-  - 2.5
-  - 2.6
-  - 2.7
+jobs:
+  fast_finish: true
+  include:
+    - rvm: 2.5
+    - rvm: 2.6
+    - rvm: 2.7
 script:
+  - bundle exec rubocop
   - bundle exec parallel_rspec spec/ -n 4 --only-group $TEST_GROUP --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log

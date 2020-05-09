@@ -11,6 +11,13 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    armitage-rubocop (0.82.0)
+      rubocop (= 0.82.0)
+      rubocop-performance (= 1.5.2)
+      rubocop-rails (= 2.5.2)
+      rubocop-rake (= 0.5.1)
+      rubocop-rspec (= 1.38.1)
+    ast (2.4.0)
     awesome_print (1.8.0)
     byebug (11.1.2)
     coderay (1.1.2)
@@ -21,11 +28,14 @@ GEM
       ruby-progressbar (~> 1.4)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    jaro_winkler (1.5.4)
     method_source (1.0.0)
     minitest (5.14.0)
     parallel (1.19.1)
     parallel_tests (2.32.0)
       parallel
+    parser (2.7.1.2)
+      ast (~> 2.4.0)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -43,7 +53,9 @@ GEM
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rainbow (3.0.0)
     rake (13.0.1)
+    rexml (3.2.4)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -57,17 +69,37 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.2)
+    rubocop (0.82.0)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.7.0.1)
+      rainbow (>= 2.2.2, < 4.0)
+      rexml
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-performance (1.5.2)
+      rubocop (>= 0.71.0)
+    rubocop-rails (2.5.2)
+      activesupport
+      rack (>= 1.1)
+      rubocop (>= 0.72.0)
+    rubocop-rake (0.5.1)
+      rubocop
+    rubocop-rspec (1.38.1)
+      rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
     slop (3.6.0)
     thread_safe (0.3.6)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
+    unicode-display_width (1.7.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activesupport (~> 5.2.0)
+  armitage-rubocop (= 0.82)
   bundler (>= 1.15)
   crawler_detect!
   fuubar (~> 2.0)
@@ -78,4 +110,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   2.1.3
+   2.1.4
