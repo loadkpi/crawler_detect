@@ -4,6 +4,7 @@ require "oj"
 
 require "crawler_detect/detector"
 require "crawler_detect/library"
+require "crawler_detect/library/loader"
 require "crawler_detect/library/crawlers"
 require "crawler_detect/library/exclusions"
 require "crawler_detect/library/headers"

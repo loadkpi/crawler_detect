@@ -12,11 +12,9 @@ RSpec.describe Rack::CrawlerDetect do
     end
   end
 
-  before do
-    allow(CrawlerDetect::Library::Crawlers).to receive(:class_variable_get).and_return(["Test Bot"])
-  end
-
   it "extends functionality of Rack::Request" do
+    stub_const("CrawlerDetect::Library::Crawlers::CRAWLERS", ["Test Bot"])
+
     header "User-Agent", "Test Bot 007"
     get "/"
 
@@ -25,6 +23,8 @@ RSpec.describe Rack::CrawlerDetect do
   end
 
   it "works with custom header" do
+    stub_const("CrawlerDetect::Library::Crawlers::CRAWLERS", ["Test Bot"])
+
     header "From", "Test Bot 007"
     get "/"
 

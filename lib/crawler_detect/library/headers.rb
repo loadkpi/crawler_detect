@@ -3,7 +3,9 @@
 module CrawlerDetect
   module Library
     module Headers
-      @@headers = Oj.load_file("lib/crawler_detect/library/raw/Headers.json").freeze
+      extend Loader
+
+      HEADERS = load_raw("Headers")
     end
   end
 end

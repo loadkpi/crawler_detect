@@ -3,7 +3,9 @@
 module CrawlerDetect
   module Library
     module Exclusions
-      @@exclusions = Oj.load_file("lib/crawler_detect/library/raw/Exclusions.json").freeze
+      extend Loader
+
+      EXCLUSIONS = load_raw("Exclusions")
     end
   end
 end
