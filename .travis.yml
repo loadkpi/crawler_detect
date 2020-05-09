@@ -21,4 +21,5 @@ jobs:
   include:
     - stage: lint
       rvm: 2.7
+      env: "TEST_GROUP=none"
       script: bundle exec rubocop
