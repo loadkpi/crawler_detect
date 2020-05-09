@@ -5,7 +5,7 @@ module CrawlerDetect
     class << self
       def get_regexp(param)
         data = get_array(param)
-        %r[#{data.join('|')}]i
+        %r{#{data.join('|')}}i
       end
 
       def get_array(param)
