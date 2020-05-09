@@ -13,10 +13,14 @@ rvm:
   - 2.5
   - 2.6
   - 2.7
+stages:
+  - lint
+  - test
 jobs:
   fast_finish: true
   include:
-    - stage: "Lint"
+    - stage: lint
+      rvm: 2.7
       script: bundle exec rubocop
-    - stage: "Test"
+    - stage: test
       script: bundle exec parallel_rspec spec/ -n 4 --only-group $TEST_GROUP --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log
