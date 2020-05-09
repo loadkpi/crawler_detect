@@ -15,10 +15,11 @@ module CrawlerDetect
         "HTTP_X_BOLT_PHONE_UA",
         "HTTP_DEVICE_STOCK_UA",
         "HTTP_X_UCBROWSER_DEVICE_UA",
-        # Sometimes, bots (especially Google) use a genuine user agent, but fill this header in with their email address
+        # Sometimes, bots (especially Google) use a genuine user agent,
+        # but fill this header in with their email address
         "HTTP_FROM",
         # Seen in use by Netsparker
-        "HTTP_X_SCANNER",
+        "HTTP_X_SCANNER"
       ].freeze
     end
   end

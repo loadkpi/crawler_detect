@@ -7,7 +7,7 @@ RSpec.shared_examples "devices detector_devices" do |chunk|
     let(:devices_uas) { GOOD_UA_CHUNKS[chunk] }
 
     GOOD_UA_CHUNKS[chunk].each do |ua|
-      describe "#{ua}" do
+      describe ua.to_s do
         let(:user_agent) { ua }
 
         it { is_expected.to be(false) }

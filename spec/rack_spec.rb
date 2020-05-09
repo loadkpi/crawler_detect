@@ -8,7 +8,7 @@ RSpec.describe Rack::CrawlerDetect do
   def app
     Rack::Builder.app do
       use Rack::CrawlerDetect
-      run lambda { |_env| [200, { "Content-Type" => "text/plain" }, ["OK"]] }
+      run -> (_env) { [200, { "Content-Type" => "text/plain" }, ["OK"]] }
     end
   end
 
@@ -31,5 +31,4 @@ RSpec.describe Rack::CrawlerDetect do
     expect(last_request.is_crawler?).to eq(true)
     expect(last_request.crawler_name).to eq("Test Bot")
   end
-
 end

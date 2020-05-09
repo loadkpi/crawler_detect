@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
+# rubocop:disable Layout/LineLength
 # rubocop:disable Layout/TrailingWhitespace
+# rubocop:disable Metrics/ModuleLength
 module CrawlerDetect
   module Library
     module Crawlers
@@ -1283,3 +1285,6 @@ ZyBorg
     end
   end
 end
+# rubocop:enable Layout/LineLength
+# rubocop:enable Layout/TrailingWhitespace
+# rubocop:enable Metrics/ModuleLength
