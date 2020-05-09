@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     crawler_detect (0.1.12)
+      oj (>= 3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -31,6 +32,7 @@ GEM
     jaro_winkler (1.5.4)
     method_source (1.0.0)
     minitest (5.14.0)
+    oj (3.10.6)
     parallel (1.19.1)
     parallel_tests (2.32.0)
       parallel
