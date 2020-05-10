@@ -7,6 +7,7 @@ but only major changes.
 ---------
 - Use raw JSON files instead of copy them to rb [#8]
 - Add CrawlerDetect::Config to make it possible to have own raw files [#8]
+- Add bin/update_raw_files to update raw files from PHP lib [#8] 
 - Add Changelog
 
 0.1.11
