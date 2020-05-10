@@ -3,15 +3,15 @@
 require "oj"
 require "qonfig"
 
-require "crawler_detect/config"
-require "crawler_detect/detector"
-require "crawler_detect/library/loader"
-require "crawler_detect/library/crawlers"
-require "crawler_detect/library/exclusions"
-require "crawler_detect/library/headers"
-require "crawler_detect/library"
-require "crawler_detect/version"
-require "rack/crawler_detect"
+require_relative "crawler_detect/config"
+require_relative "crawler_detect/detector"
+require_relative "crawler_detect/library/loader"
+require_relative "crawler_detect/library/crawlers"
+require_relative "crawler_detect/library/exclusions"
+require_relative "crawler_detect/library/headers"
+require_relative "crawler_detect/library"
+require_relative "crawler_detect/version"
+require_relative "rack/crawler_detect"
 
 module CrawlerDetect
   class << self
