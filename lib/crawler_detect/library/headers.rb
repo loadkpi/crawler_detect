@@ -5,7 +5,9 @@ module CrawlerDetect
     module Headers
       extend Loader
 
-      HEADERS = load_raw("Headers")
+      def self.data
+        @data ||= load_raw(CrawlerDetect.config.settings.raw_headers_path).freeze
+      end
     end
   end
 end

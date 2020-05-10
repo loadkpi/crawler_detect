@@ -3,10 +3,12 @@
 module CrawlerDetect
   module Library
     module Loader
-      def load_raw(name)
-        ::Oj.load_file(
-          File.join(File.dirname(File.expand_path(__FILE__)), "raw/#{name}.json")
-        )
+      def load_raw(path)
+        ::Oj.load_file(path)
+      end
+
+      def reload_data
+        remove_instance_variable(:@data) if instance_variable_defined?(:@data)
       end
     end
   end

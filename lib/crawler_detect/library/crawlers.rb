@@ -5,7 +5,9 @@ module CrawlerDetect
     module Crawlers
       extend Loader
 
-      CRAWLERS = load_raw("Crawlers")
+      def self.data
+        @data ||= load_raw(CrawlerDetect.config.settings.raw_crawlers_path).freeze
+      end
     end
   end
 end

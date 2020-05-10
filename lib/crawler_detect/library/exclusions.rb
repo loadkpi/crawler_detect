@@ -5,7 +5,9 @@ module CrawlerDetect
     module Exclusions
       extend Loader
 
-      EXCLUSIONS = load_raw("Exclusions")
+      def self.data
+        @data ||= load_raw(CrawlerDetect.config.settings.raw_exclusions_path).freeze
+      end
     end
   end
 end
