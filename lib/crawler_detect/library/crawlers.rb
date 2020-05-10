@@ -2,6 +2,7 @@
 
 module CrawlerDetect
   module Library
+    # @since 0.1.0
     module Crawlers
       extend Loader
 

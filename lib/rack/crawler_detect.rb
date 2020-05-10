@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 module Rack
+  # Rack-based interface to detect crawlers
+  #
+  # @since 0.1.0
   class CrawlerDetect
     def initialize(app, options = {})
       Rack::Request::Helpers.module_eval do
