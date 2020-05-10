@@ -54,5 +54,18 @@ end
 ```
 use Rack::CrawlerDetect
 ```
+## Configuration
+In some cases you may want to use your own white-list, or black-list or list of http-headers to detect User-agent.
+
+It is possible to do via `CrawlerDetect::Config`. For example, you may have initializer like this:
+```
+CrawlerDetect.setup! do |config|
+  config.raw_headers_path    = File.expand_path("crawlers/MyHeaders.json", __dir__)
+  config.raw_crawlers_path   = File.expand_path("crawlers/MyCrawlers.json", __dir__)
+  config.raw_exclusions_path = File.expand_path("crawlers/MyExclusions.json", __dir__)
+end
+```
+Make sure that your files are correct JSON files. 
+Look at [the raw files](https://github.com/loadkpi/crawler_detect/tree/master/lib/crawler_detect/library/raw) which are used by default for more information. 
 ## License
 MIT License
