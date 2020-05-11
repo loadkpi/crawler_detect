@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+wget -O $DIR/../lib/crawler_detect/library/raw/Crawlers.json https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Crawlers.json
+wget -O $DIR/../lib/crawler_detect/library/raw/Exclusions.json https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Exclusions.json
+wget -O $DIR/../lib/crawler_detect/library/raw/Headers.json https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/raw/Headers.json
+
+wget -O $DIR/../spec/fixtures/crawlers.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/tests/crawlers.txt
+wget -O $DIR/../spec/fixtures/devices.txt https://raw.githubusercontent.com/JayBizzle/Crawler-Detect/master/tests/devices.txt

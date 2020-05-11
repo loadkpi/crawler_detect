@@ -1,7 +1,9 @@
 PATH
   remote: .
   specs:
-    crawler_detect (0.1.12)
+    crawler_detect (1.0.0)
+      oj (>= 3.0)
+      qonfig (~> 0.24)
 
 GEM
   remote: https://rubygems.org/
@@ -31,6 +33,7 @@ GEM
     jaro_winkler (1.5.4)
     method_source (1.0.0)
     minitest (5.14.0)
+    oj (3.10.6)
     parallel (1.19.1)
     parallel_tests (2.32.0)
       parallel
@@ -50,6 +53,7 @@ GEM
     pry-remote (0.1.8)
       pry (~> 0.9)
       slop (~> 3.0)
+    qonfig (0.24.1)
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
