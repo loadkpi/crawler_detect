@@ -54,7 +54,7 @@ GEM
       pry (~> 0.9)
       slop (~> 3.0)
     qonfig (0.24.1)
-    rack (2.2.2)
+    rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
