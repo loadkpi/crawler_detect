@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    crawler_detect (1.0.0)
+    crawler_detect (1.0.1)
       oj (>= 3.0)
       qonfig (~> 0.24)
 
