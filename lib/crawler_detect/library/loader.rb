@@ -6,7 +6,7 @@ module CrawlerDetect
     module Loader
       # Load JSON raw file
       def load_raw(path)
-        ::Oj.load_file(path)
+        JSON.parse(File.read(path))
       end
 
       # Remove cached raw data

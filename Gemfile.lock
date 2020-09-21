@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     crawler_detect (1.0.2)
-      oj (>= 3.0)
       qonfig (~> 0.24)
 
 GEM
@@ -34,7 +33,6 @@ GEM
     jaro_winkler (1.5.4)
     method_source (1.0.0)
     minitest (5.14.1)
-    oj (3.10.6)
     parallel (1.19.1)
     parallel_tests (2.32.0)
       parallel

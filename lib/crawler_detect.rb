@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "oj"
+require "json"
 require "qonfig"
 
 require_relative "crawler_detect/config"
