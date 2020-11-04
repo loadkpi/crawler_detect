@@ -3,6 +3,10 @@
 This changelog **does not contain** raw data updates 
 but only major changes.
 
+1.1.0
+---------
+- Moves to Ruby's Stdlib JSON implementation to reduce dependencies
+
 1.0.0
 ---------
 - Use raw JSON files instead of copy them to rb [#8]
