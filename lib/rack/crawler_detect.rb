@@ -8,7 +8,7 @@ module Rack
     def initialize(app, options = {})
       Rack::Request::Helpers.module_eval do
         def is_crawler?
-          env["rack.crawler_detect"] && env["rack.crawler_detect"][:is_crawler]
+          !!(env["rack.crawler_detect"] && env["rack.crawler_detect"][:is_crawler])
         end
 
         def crawler_name
