@@ -2,8 +2,6 @@ os: linux
 dist: xenial
 language: ruby
 cache: bundler
-before_install:
-  - gem install bundler
 env:
   - "TEST_GROUP=1"
   - "TEST_GROUP=2"
