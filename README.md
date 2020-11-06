@@ -15,6 +15,8 @@ Comparing with other popular bot-detection gems:
 | Number of checked HTTP-headers | 10 | 1 | 1 |
 | Number of updates of bot-list *(1st half of 2018)* | 14 | 1 | 7 |
 
+In order to remain up-to-date, this gem does not accept any crawler data updates – any PRs to edit the crawler data should be offered to the original  [JayBizzle/CrawlerDetect](https://github.com/JayBizzle/Crawler-Detect) project.
+
 ## Installation
 Add this line to your application's Gemfile:
 
