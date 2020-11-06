@@ -16,6 +16,7 @@ jobs:
           bundle install --jobs 4 --retry 3
       - run: bundle exec rubocop
   test:
+    needs: lint
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
