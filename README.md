@@ -20,45 +20,45 @@ Add this line to your application's Gemfile:
 
 `gem 'crawler_detect'`
 ## Basic Usage
-```
+```ruby
 CrawlerDetect.is_crawler?("Bot user agent")
 => true
 ```
 Or if you need crawler name:
-```
+```ruby
 detector = CrawlerDetect.new("Googlebot/2.1 (http://www.google.com/bot.html)")
 detector.is_crawler?
-=> true
+# => true
 detector.crawler_name
-=> "Googlebot"
+# => "Googlebot"
 ```
 ## Rack::Request extension
 **Optionally** you can add additional methods for `request`:
-```
+```ruby
 request.is_crawler?
-=> false
+# => false
 request.crawler_name
-=> nil
+# => nil
 ```
 It's more flexible to use `request.is_crawler?` rather than `CrawlerDetect.is_crawler?` because it automatically checks 10 HTTP-headers, not only `HTTP_USER_AGENT`.
 
 Only one thing you have to do is to configure `Rack::CrawlerDetect` midleware:
 ###  Rails
-```
+```ruby
 class Application < Rails::Application
-  ...
+  # ...
   config.middleware.use Rack::CrawlerDetect
 end
 ```
 ### Rake
-```
+```ruby
 use Rack::CrawlerDetect
 ```
 ## Configuration
 In some cases you may want to use your own white-list, or black-list or list of http-headers to detect User-agent.
 
 It is possible to do via `CrawlerDetect::Config`. For example, you may have initializer like this:
-```
+```ruby
 CrawlerDetect.setup! do |config|
   config.raw_headers_path    = File.expand_path("crawlers/MyHeaders.json", __dir__)
   config.raw_crawlers_path   = File.expand_path("crawlers/MyCrawlers.json", __dir__)
