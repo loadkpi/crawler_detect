@@ -20,5 +20,5 @@ jobs:
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
-          echo ${{matrix.group}}
+          echo ${{matrix.test-group}}
 #          bundle exec rspec
