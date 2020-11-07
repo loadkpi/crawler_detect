@@ -1,0 +1,38 @@
+name: build
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - name: install gems
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+      - run: bundle exec rubocop
+  test:
+    needs: lint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: [2.5, 2.6, 2.7]
+        test-group: [1, 2, 3, 4]
+    name: Ruby ${{ matrix.ruby }}, test-group ${{ matrix.test-group }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+      - name: install gems
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+      - name: test
+        run: |
+          bundle exec parallel_rspec spec/ -n 4 --only-group ${{ matrix.test-group }} --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log
