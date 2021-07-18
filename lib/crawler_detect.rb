@@ -32,7 +32,7 @@ module CrawlerDetect
     # @param config [Proc]
     def setup!(&config)
       @config = CrawlerDetect::Config.new(&config)
-      Library::DATA_CLASSES.each(&:reload_data)
+      Library.reset_cache
     end
 
     # @since 1.0.0
