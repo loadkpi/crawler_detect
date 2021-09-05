@@ -13,7 +13,8 @@ RSpec.describe Rack::CrawlerDetect do
   end
 
   before do
-    allow(CrawlerDetect::Library::Crawlers).to receive(:data).and_return(["Test Bot"])
+    allow(CrawlerDetect::Library).to receive(:get_regexp).and_call_original
+    allow(CrawlerDetect::Library).to receive(:get_regexp).with("crawlers").and_return(%r{Test Bot}i)
   end
 
   it "extends functionality of Rack::Request" do
