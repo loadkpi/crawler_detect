@@ -3,6 +3,10 @@
 This changelog **does not contain** raw data updates 
 but only major changes.
 
+1.2.0
+---------
+- Speed up crawler detection by caching Regexp objects [#38]
+
 1.1.0
 ---------
 - Moves to Ruby's Stdlib JSON implementation to reduce dependencies
