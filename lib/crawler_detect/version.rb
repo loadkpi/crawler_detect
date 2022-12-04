@@ -2,5 +2,5 @@
 
 # @since 0.1.0
 module CrawlerDetect
-  VERSION = "1.2.1"
+  VERSION = "1.2.2"
 end
