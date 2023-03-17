@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "qonfig", "~> 0.24"
 
-  spec.add_development_dependency "activesupport", "~> 6.0.3"
+  spec.add_development_dependency "activesupport", "~> 7.0.4"
   spec.add_development_dependency "bundler", ">= 1.15"
   spec.add_development_dependency "fuubar", "~> 2.0"
   spec.add_development_dependency "parallel_tests", "~> 2.0"
