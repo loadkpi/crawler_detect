@@ -3502,6 +3502,7 @@ Google-Ads-Overview Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, l
 Google-Ads-Overview Mozilla/5.0 (Linux; U; Android 6.0.1; generic) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Version/4.0 Mobile Safari/537.36
 Google-Ads-Overview Mozilla/5.0 (Linux; U; Android 2.3.4; generic) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Version/4.0 Mobile Safari/537.36
 Google-Ads-Overview Mozilla/5.0 (Linux; U; Android 2.3.4; generic) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Mobile Safari/537.36
+Mozilla/5.0 AppleWebKit/537.36 Chrome/114.0.5735.179 Safari/537.36 Google-Ads-Conversions
 adreview/1.0
 Google-speakr
 Google-speakr,gzip(gfe)
@@ -3654,3 +3655,13 @@ gobuster/3.1.0
 Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 DatadogSynthetics
 Frontman v1.9.3 linux amd64
 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36 ForusP
+Mozilla/5.0 (compatible; seocompany/0.6; +; )
+Visual Rights Group (https://visualrightsgroup.com/) Scanner
+Mozilla/5.0 (compatible; VelenPublicWebCrawler/1.0; +https://velen.io)
+Mollie HTTP client/1.0
+Inboxb0t-Image/2.0
+fragFINN.de HTTP-Collector
+SpeedKit
+Amazon CloudFront
+link-check/5.2.0
+Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com
