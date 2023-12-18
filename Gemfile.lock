@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    crawler_detect (1.2.2)
+    crawler_detect (1.2.3)
       qonfig (~> 0.24)
 
 GEM
