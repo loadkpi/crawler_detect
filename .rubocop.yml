@@ -6,6 +6,7 @@ inherit_gem:
 
 AllCops:
   TargetRubyVersion: 2.5
+  NewCops: enable
   Include:
     - lib/**/*.rb
     - spec/**/*.rb

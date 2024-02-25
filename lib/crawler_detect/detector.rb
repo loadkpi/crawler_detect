@@ -26,7 +26,7 @@ module CrawlerDetect
     # @return [true, false] Is User-agent in white-list?
     def completely_exclusion?
       @user_agent.gsub!(exclusions_matcher, "")
-      @user_agent.strip.length.zero?
+      @user_agent.strip.empty?
     end
 
     # @private
