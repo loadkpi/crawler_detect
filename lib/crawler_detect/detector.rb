@@ -11,9 +11,7 @@ module CrawlerDetect
 
     # @return [true, false] Is User-agent a crawler?
     def is_crawler?
-      @is_crawler ||= begin
-        !completely_exclusion? && matches_crawler_list?
-      end
+      @is_crawler ||= !completely_exclusion? && matches_crawler_list?
     end
 
     # @return [String] The detected crawler name from RAW data
