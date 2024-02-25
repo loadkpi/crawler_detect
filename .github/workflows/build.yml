@@ -6,10 +6,11 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.0
+          bundler-cache: true
       - name: install gems
         run: |
           gem install bundler
@@ -25,10 +26,11 @@ jobs:
         test-group: [1, 2, 3, 4]
     name: Ruby ${{ matrix.ruby }}, test-group ${{ matrix.test-group }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
       - name: install gems
         run: |
           gem install bundler
