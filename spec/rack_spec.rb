@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "rack/builder"
 require "rack/test"
 
 RSpec.describe Rack::CrawlerDetect do
