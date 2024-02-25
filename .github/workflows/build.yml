@@ -11,10 +11,6 @@ jobs:
         with:
           ruby-version: '3.0'
           bundler-cache: true
-      - name: install gems
-        run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
       - run: bundle exec rubocop
   test:
     needs: lint
@@ -31,10 +27,6 @@ jobs:
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
-      - name: install gems
-        run: |
-          gem install bundler
-          bundle install --jobs 4 --retry 3
       - name: test
         run: |
           bundle exec parallel_rspec spec/ -n 4 --only-group ${{ matrix.test-group }} --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log
