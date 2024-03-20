@@ -1,0 +1,37 @@
+version: "3"
+services:
+  ruby2.5:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: 2.5
+        BUNDLER_VERSION: 2.3
+  ruby2.6:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: 2.6
+        BUNDLER_VERSION: 2.4
+  ruby2.7:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: 2.7
+        BUNDLER_VERSION: 2.4
+  ruby3.0:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: 3.0
+        BUNDLER_VERSION: 2.4
+  ruby3.3:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: 3.3
+        BUNDLER_VERSION: 2.5
