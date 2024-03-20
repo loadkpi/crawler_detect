@@ -18,4 +18,3 @@ RUN bundle install
 COPY . .
 
 CMD ["bundle", "exec", "rubocop"]
-#CMD bundle exec rubocop && bundle exec rspec

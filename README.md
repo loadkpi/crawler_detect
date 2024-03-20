@@ -69,5 +69,14 @@ end
 ```
 Make sure that your files are correct JSON files. 
 Look at [the raw files](https://github.com/loadkpi/crawler_detect/tree/master/lib/crawler_detect/library/raw) which are used by default for more information. 
+
+## Development
+
+You can run `rubocop` \ `rspec` with any ruby version using docker like this:
+```bash
+docker build --build-arg RUBY_VERSION=3.3 --build-arg BUNDLER_VERSION=2.5 -t crawler_detect:3.3 .
+docker run -it crawler_detect:3.3 bundle exec rspec
+```
+
 ## License
 MIT License
