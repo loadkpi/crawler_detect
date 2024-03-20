@@ -17,6 +17,10 @@ Comparing with other popular bot-detection gems:
 
 In order to remain up-to-date, this gem does not accept any crawler data updates – any PRs to edit the crawler data should be offered to the original  [JayBizzle/CrawlerDetect](https://github.com/JayBizzle/Crawler-Detect) project.
 
+## Requirements
+
+- Ruby: MRI 2.5+ or JRuby 9.3+.
+
 ## Installation
 Add this line to your application's Gemfile:
 
