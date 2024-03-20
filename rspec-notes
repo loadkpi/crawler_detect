@@ -1,0 +1,33 @@
+  1) CrawlerDetect::Detector black list Mozilla/5.0 AppleWebKit/537.36 Chrome/114.0.5735.179 Safari/537.36 Google-Ads-Conversions
+ is expected to equal true
+     Failure/Error: it { is_expected.to be(true) }
+
+       expected true
+            got false
+     # ./spec/crawler_detect/detector_spec.rb:19:in `block (5 levels) in <top (required)>'
+
+
+  2) CrawlerDetect::Detector black list Amazon CloudFront
+ is expected to equal true
+     Failure/Error: it { is_expected.to be(true) }
+
+       expected true
+            got false
+     # ./spec/crawler_detect/detector_spec.rb:19:in `block (5 levels) in <top (required)>'
+
+
+  3) CrawlerDetect::Detector black list link-check/5.2.0
+ is expected to equal true
+     Failure/Error: it { is_expected.to be(true) }
+
+       expected true
+            got false
+     # ./spec/crawler_detect/detector_spec.rb:19:in `block (5 levels) in <top (required)>'
+
+
+  4) CrawlerDetect::Detector black list Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com is expected to equal true
+     Failure/Error: it { is_expected.to be(true) }
+
+       expected true
+            got false
+     # ./spec/crawler_detect/detector_spec.rb:19:in `block (5 levels) in <top (required)>'

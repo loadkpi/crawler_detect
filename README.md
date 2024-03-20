@@ -17,6 +17,10 @@ Comparing with other popular bot-detection gems:
 
 In order to remain up-to-date, this gem does not accept any crawler data updates – any PRs to edit the crawler data should be offered to the original  [JayBizzle/CrawlerDetect](https://github.com/JayBizzle/Crawler-Detect) project.
 
+## Requirements
+
+- Ruby: MRI 2.5+ or JRuby 9.3+.
+
 ## Installation
 Add this line to your application's Gemfile:
 
@@ -69,5 +73,14 @@ end
 ```
 Make sure that your files are correct JSON files. 
 Look at [the raw files](https://github.com/loadkpi/crawler_detect/tree/master/lib/crawler_detect/library/raw) which are used by default for more information. 
+
+## Development
+
+You can run `rubocop` \ `rspec` with any ruby version using docker like this:
+```bash
+docker build --build-arg RUBY_VERSION=3.3 --build-arg BUNDLER_VERSION=2.5 -t crawler_detect:3.3 .
+docker run -it crawler_detect:3.3 bundle exec rspec
+```
+
 ## License
 MIT License

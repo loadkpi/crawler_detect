@@ -5,7 +5,7 @@ module Rack
   #
   # @since 0.1.0
   class CrawlerDetect
-    def initialize(app, options = {})
+    def initialize(app, _options = {})
       Rack::Request::Helpers.module_eval do
         def is_crawler?
           env["rack.crawler_detect"][:is_crawler]

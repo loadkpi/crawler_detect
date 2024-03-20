@@ -5,7 +5,8 @@ inherit_gem:
     - lib/rubocop.rspec.yml
 
 AllCops:
-  TargetRubyVersion: 2.7.1
+  TargetRubyVersion: 2.5
+  NewCops: enable
   Include:
     - lib/**/*.rb
     - spec/**/*.rb

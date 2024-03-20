@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "bundler/setup"
-require "pry-meta"
 
 require "active_support/core_ext/array/grouping"
 require "active_support/core_ext/object/blank"
