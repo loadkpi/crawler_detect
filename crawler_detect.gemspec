@@ -26,9 +26,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "qonfig", ">= 0.24"
 
-  spec.add_development_dependency "activesupport", ">= 7.1"
+  spec.add_development_dependency "activesupport", ">= 6.0"
   spec.add_development_dependency "fuubar", ">= 2.5"
-  spec.add_development_dependency "parallel_tests", ">= 4.0"
+  spec.add_development_dependency "parallel_tests", ">= 3.0"
   spec.add_development_dependency "rack-test", ">= 2.1"
   spec.add_development_dependency "rake", ">= 13.1"
   spec.add_development_dependency "rspec", ">= 3.13"
