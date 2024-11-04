@@ -1,6 +1,6 @@
 name: build
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   lint:
@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0'
+          ruby-version: ruby
           bundler-cache: true
       - run: bundle exec rubocop
   test:
@@ -30,3 +30,19 @@ jobs:
       - name: test
         run: |
           bundle exec parallel_rspec spec/ -n 4 --only-group ${{ matrix.test-group }} --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log
+  push:
+    # Run on push to master branch
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    name: Push gem to RubyGems.org
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ruby
+          bundler-cache: true
+      - uses: rubygems/release-gem@v1

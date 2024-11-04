@@ -11,7 +11,7 @@ Comparing with other popular bot-detection gems:
 |  | CrawlerDetect | Voight-Kampff | Browser  |
 |--|--|--|--|
 | Number of bot-patterns | >1000 | ~280 | ~280 |
-| Number of checked HTTP-headers | 10 | 1 | 1 |
+| Number of checked HTTP-headers | 11 | 1 | 1 |
 | Number of updates of bot-list *(1st half of 2018)* | 14 | 1 | 7 |
 
 In order to remain up-to-date, this gem does not accept any crawler data updates – any PRs to edit the crawler data should be offered to the original  [JayBizzle/CrawlerDetect](https://github.com/JayBizzle/Crawler-Detect) project.

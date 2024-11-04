@@ -1116,7 +1116,6 @@ ShowyouBot (http://showyou.com/crawler)
 Yoleo Consumer v0.2
 Mozilla/5.0 (compatible; IstellaBot/1.10.2 +http://www.tiscali.it/)
 Mozilla/5.0 (compatible; MSIE or Firefox mutant; not on Windows server; +http://ws.daum.net/aboutWebSearch.html) Daumoa/3.0
-Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 YaBrowser/15.12.0.6151 Safari/537.36 Yandex.Translate
 Mozilla/5.0 (compatible; TeeRaidBot; +https://teeraid.com/bot/)
 Mozilla/5.0 (compatible; Scopia Crawler 1.1; +http://www.scopia.co)
 CopperEgg/RevealUptime/DublinIE(aws)
@@ -2874,6 +2873,8 @@ COMODO DCV
 CATExplorador/1.0beta (sistemes at domini dot cat; http://domini.cat/catexplorador.html)
 ZmEu
 RSSOwl/2.2.1.201312301314 (Windows; U; en)
+RuxitSynthetic/
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.6533.99 Safari/537.36 RuxitSynthetic/1.0 v119975163693 t1975984516666483988 ath87850d94 altpub cvcv=2 smf=0
 WebClient/1.0
 Microsoft-WebDAV-MiniRedir/10.0.10586
 Microsoft-WebDAV-MiniRedir/10.0.14393
@@ -3669,3 +3670,9 @@ Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MicrosoftPreview/
 Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GeedoProductSearch; +http://www.geedo.com/product-search.html) Chrome/79.0.3945.88 Safari/537.36
 Mozilla/5.0 (compatible; +probely.com/sos) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36 ProbelySPDR/0.2.0
 facebookcatalog/1.0
+Verity/1.1 (gumgum.com/verity; verity-support@gumgum.com)
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GoogleOther) Chrome/117.0.5938.132 Safari/537.36
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Mobile Safari/537.36 (compatible; GoogleOther)
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.94 Mobile Safari/537.36 (compatible; GoogleOther)
+Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)
+Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)
