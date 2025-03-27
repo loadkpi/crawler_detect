@@ -35,4 +35,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "armitage-rubocop", ">= 0.82"
 
   spec.required_ruby_version = ">= 2.5.0"
+
+  spec.metadata = {
+    "bug_tracker_uri" => "https://github.com/loadkpi/crawler_detect/issues",
+    "source_code_uri" => "https://github.com/loadkpi/crawler_detect",
+    "changelog_uri"   => "https://github.com/loadkpi/crawler_detect/blob/master/CHANGELOG.md"
+  }
 end
