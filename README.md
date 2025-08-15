@@ -47,7 +47,7 @@ request.crawler_name
 ```
 It's more flexible to use `request.is_crawler?` rather than `CrawlerDetect.is_crawler?` because it automatically checks 10 HTTP-headers, not only `HTTP_USER_AGENT`.
 
-Only one thing you have to do is to configure `Rack::CrawlerDetect` midleware:
+Only one thing you have to do is to configure `Rack::CrawlerDetect` middleware:
 ###  Rails
 ```ruby
 class Application < Rails::Application
