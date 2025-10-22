@@ -1,0 +1,50 @@
+name: Update Raw Crawler Files
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-raw-files:
+    name: Update Raw Files
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      
+      - name: Execute raw files update
+        run: |
+          set -euxo pipefail
+          bash ./bin/update_raw_files
+        timeout-minutes: 5
+   
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          base: ${{ github.event.repository.default_branch }}
+          branch: "update-raw-files"
+          delete-branch: true
+          labels: automated
+          
+          commit-message: |
+            Update raw crawler files
+            
+            Automated update of crawlers data from upstream source.
+          
+          title: "Automated: Update raw crawlers files"
+          body: |
+            ## Update raw crawler files
+            
+            This pull request contains automated update of crawlers data from upstream source.
+            
+            ---
+            *This PR was created automatically by the `update_raw_files` GitHub Action.*
