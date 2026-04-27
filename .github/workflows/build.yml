@@ -35,7 +35,7 @@ jobs:
           bundler-cache: true
       - name: test
         run: |
-          bundle exec parallel_rspec spec/ -n 4 --only-group ${{ matrix.test-group }} --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log
+          bundle exec rake parallel:spec spec/ -n 4 --only-group ${{ matrix.test-group }} --group-by runtime --runtime-log spec/fixtures/parallel_runtime_rspec.log
   push:
     # Run on push to master branch
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
