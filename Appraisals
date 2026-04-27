@@ -8,7 +8,7 @@ end
 appraise "crawler_detect_2.7" do
 end
 
-appraise "crawler_detect_3" do
+appraise "crawler_detect_3.0.7" do
 end
 
 appraise "crawler_detect_3.1" do
