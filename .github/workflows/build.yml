@@ -25,7 +25,7 @@ jobs:
                jruby-9.3, jruby-9.4, jruby-10.0]
         test-group: [1, 2, 3, 4]
     env:
-      BUNDLE_GEMFILE: gemfiles/crawler_detect_${{ matrix.graphql-ruby }}.gemfile
+      BUNDLE_GEMFILE: gemfiles/crawler_detect_${{ matrix.ruby }}.gemfile
     name: Ruby ${{ matrix.ruby }}, test-group ${{ matrix.test-group }}
     steps:
       - uses: actions/checkout@v4
