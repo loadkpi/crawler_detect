@@ -94,7 +94,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (>= 6.0)
-  appraisal
+  appraisal (>= 2.5)
   armitage-rubocop (>= 0.82)
   crawler_detect!
   fuubar (>= 2.5)
