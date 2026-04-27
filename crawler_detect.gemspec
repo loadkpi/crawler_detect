@@ -33,7 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", ">= 13.1"
   spec.add_development_dependency "rspec", ">= 3.13"
   spec.add_development_dependency "armitage-rubocop", ">= 0.82"
-  spec.add_development_dependency "appraisal"
+  spec.add_development_dependency "appraisal", ">= 2.5"
 
   spec.required_ruby_version = ">= 2.5.0"
 
