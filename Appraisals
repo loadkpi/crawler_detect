@@ -8,7 +8,7 @@ end
 appraise "crawler_detect_2.7" do
 end
 
-appraise "crawler_detect_3.0.7" do
+appraise "crawler_detect_3.0" do
 end
 
 appraise "crawler_detect_3.1" do
@@ -24,6 +24,7 @@ appraise "crawler_detect_3.4" do
 end
 
 appraise "crawler_detect_4.0" do
+  gem "activesupport", ">= 7.0"
 end
 
 appraise "crawler_detect_jruby-9.3" do
