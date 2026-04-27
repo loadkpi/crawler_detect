@@ -20,6 +20,12 @@ end
 appraise "crawler_detect_3.3" do
 end
 
+appraise "crawler_detect_3.4" do
+end
+
+appraise "crawler_detect_4.0" do
+end
+
 appraise "crawler_detect_jruby-9.3" do
 end
 
