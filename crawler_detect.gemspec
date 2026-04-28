@@ -28,11 +28,11 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "activesupport", ">= 6.0"
   spec.add_development_dependency "fuubar", ">= 2.5"
-  spec.add_development_dependency "parallel_tests", ">= 3.0"
   spec.add_development_dependency "rack-test", ">= 2.1"
   spec.add_development_dependency "rake", ">= 13.1"
   spec.add_development_dependency "rspec", ">= 3.13"
   spec.add_development_dependency "armitage-rubocop", ">= 0.82"
+  spec.add_development_dependency "appraisal", ">= 2.5"
 
   spec.required_ruby_version = ">= 2.5.0"
 
