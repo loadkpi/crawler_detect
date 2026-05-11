@@ -3272,10 +3272,6 @@ Trendsmap Resolver/0.0.1
 Mozilla/4.0 (compatible; MSIE 6.0; MS Web Services Client Protocol 4.0.30319.17929)
 Arukereso/1.0
 Trendsmap Resolver/0.0.1
-Flock/14.15 (Android 2.9; fr_BE;)
-Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB; rv:1.9.0.16) Gecko/2010021003 Firefox/3.0.16 Flock/2.5.6
-Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.14) Gecko/20080414 Firefox/2.0.0.14 Flock/1.1.2
-Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070801 Firefox/2.0.0.6 Flock/0.9.0.2
 AppStoreScraperZ/1 CFNetwork/889.9 Darwin/17.2.0 (x86_64)
 Everwall Link Expander ( http://everwall.com )
 Wfuzz/2.2.2
@@ -3666,7 +3662,6 @@ Mollie HTTP client/1.0
 Inboxb0t-Image/2.0
 fragFINN.de HTTP-Collector
 SpeedKit
-Amazon CloudFront
 link-check/5.2.0
 Mozilla/5.0/Firefox/42.0 - nbertaupete95(at)gmail.com
 Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; MicrosoftPreview/2.0; +https://aka.ms/MicrosoftPreview) Chrome/100.0.4896.127 Safari/537.36
@@ -3694,3 +3689,30 @@ Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like 
 Mozilla/5.0 (Linux; Android 11.0; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Mobile Safari/537.36 DebugBear
 Mozilla/5.0 (compatible; monitoring360bot/1.1; +https://app.360monitoring.com/bot.html)
 1Pilot Monitoring (+http://1pilot.io/)
+ChatGPT-User/1.0
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ChatGPT-User/1.0; +https://openai.com/bot)
+Mozilla/5.0 (Linux; arm_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 claude-web
+NetworkingExtension/8621.3.11.10.3 Network/4277.140.33 iOS/18.6.2
+NetworkingExtension/8620.2.5.10.7 Network/4277.42.2 iOS/17.6.1
+Dart/3.5 (dart:io)
+acme.sectigo.com/v2/DV
+amphp/http-client/5.x
+Cloudflare-SSLDetector
+Cpanel-HTTP-Client/1.0
+cpp-httplib/0.15.3
+FediAct Service
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.52 Mobile Safari/537.36 (compatible; Google-AMPHTML)
+Google-Firebase
+GoogleAssociationService
+HF-Research/1.0
+IAB-Tech-Lab
+imgproxy/3.27.2
+l9tcpid/v1.1.0
+Linkfeed.ru
+Next.js Middleware
+PlayStore-Google
+Python-xmlrpc/3.9
+SeoLik.ru
+Swisscows Favicons
+undici
+Web Downloader/6.9
