@@ -62,6 +62,7 @@ jobs:
   push:
     # Run on push to master branch
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: test
     name: Push gem to RubyGems.org
     runs-on: ubuntu-latest
     permissions:
@@ -69,9 +70,23 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+      - name: Check if version is already published
+        id: version-check
+        run: |
+          set -euo pipefail
+          VERSION=$(ruby -r ./lib/crawler_detect/version -e 'puts CrawlerDetect::VERSION')
+          if curl -fs "https://rubygems.org/api/v1/versions/crawler_detect.json" | ruby -r json -e 'puts JSON.parse($stdin.read).any? { |v| v["number"] == ARGV[0] }' "$VERSION" | grep -qx true; then
+            echo "Version ${VERSION} is already published, skipping release."
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Version ${VERSION} is not published yet, releasing."
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Set up Ruby
+        if: steps.version-check.outputs.published == 'false'
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: ruby
           bundler-cache: true
       - uses: rubygems/release-gem@v1
+        if: steps.version-check.outputs.published == 'false'
