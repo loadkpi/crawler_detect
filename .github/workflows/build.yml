@@ -17,7 +17,7 @@ jobs:
       - run: bundle exec rubocop
   test:
     needs: lint
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os || 'ubuntu-latest' }}
     strategy:
       fail-fast: false
       matrix:
@@ -40,8 +40,10 @@ jobs:
             gemfile: "3.4"
           - ruby: "4.0"
             gemfile: "4.0"
+          # setup-ruby has no JRuby 9.3 build for ubuntu-26.04 (ubuntu-latest)
           - ruby: "jruby-9.3"
             gemfile: "jruby_9.3"
+            os: ubuntu-24.04
           - ruby: "jruby-9.4"
             gemfile: "jruby_9.4"
           - ruby: "jruby-10.0"
